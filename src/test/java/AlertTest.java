@@ -41,13 +41,12 @@ public class AlertTest {
             alert3.accept();
             Assert.assertTrue(driver.findElement(By.className("result")).getText().contains("Lii"));
             System.out.println(driver.findElement(By.className("result")).getText());
-        
         }
 
     @After
         public void tearDown() throws InterruptedException {
-            //Thread.sleep(3000);
-            //driver.close();
+            Thread.sleep(3000);
+            driver.close();
     }
 
 }
